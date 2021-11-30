@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../img/servidor-de-dados.ico" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/minezim.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <title>Minezim - Survival</title>
+</head>
+<body>
+    
+    <!-- Inicio Header Minezim -->
+    <header id="header">
+
+        <div class="left-container">
+            <div class="status-container">
+                <div class="status">
+                    <div class="icon">
+                        <img src="./img/brasil.png" class="icon-img">
+                    </div>
+                    <h1>BR</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-container">
+            <img src="./img/servidor-de-dados.ico" class="logo-img">
+            <h1>Minezim©</h1>
+        </div>
+
+        <div class="right-container"></div>
+        
+    </header>
+    <!-- Fim Header Minezim -->
+
+    <!-- Inicio Home Section -->
+    <section id="home">
+        
+        <div class="home-container">
+
+            <!-- Start eft Side -->
+            <div class="left">
+
+                <div class="text-covid">
+                    <h1>
+                        ❤ Fight Covid-19 together and better #storymode
+                    </h1>
+                </div>
+
+                <div class="text-title">
+                    <h1>
+                        Minezim Survival, a jornada de 2 semanas.
+                    </h1>
+                </div>
+
+                <div class="text-subtitle">
+                    <h2>
+                        Servidor na versão 1.18 <br>
+                        Para jogar, basta copiar o IP abaixo e colar no jogo.
+                    </h2>
+                </div>
+
+                <div class="text-ip">
+                    <div class="ip-btn" id="url">
+                        <h1>20.195.196.49</h1>
+                    </div>
+                    <p>*clique para copiar o ip</p>
+                </div>
+
+                <div class="discord">
+                    <img src="./img/hosting.png" alt="">
+                    <img src="./img/servidor-de-dados.ico" alt="">
+                    <img src="./img/servidor-de-dados (1).png" alt="">
+                    <img src="./img/brasil.png" alt="">
+                </div>
+
+
+
+            </div>
+            <!-- End Left Side -->
+
+            <!-- Start Right Side -->
+            <div class="right">
+                <img src="./img/minecraft.png" alt="">
+            </div>
+            <!-- End Right Side -->
+
+        </div>
+
+    </section>
+    <!-- Fim Home Section -->
+
+
+
+    <script>
+        $(function(){
+            $("#url").click(function(){
+                navigator.clipboard.writeText('20.195.196.49');
+                $("#url").addClass('copied');
+                $("#url").text('Copiado!');
+            })
+        })
+    </script>
+
+
+</body>
+</html>
